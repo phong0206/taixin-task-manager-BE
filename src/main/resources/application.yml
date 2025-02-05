@@ -1,6 +1,4 @@
 spring:
-  profiles:
-    active: dev
   datasource:
     url: jdbc:mysql://localhost:3306/taixin-db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -11,24 +9,24 @@ spring:
     hibernate:
       ddl-auto: update
 
-  kafka:
-    bootstrap-servers: localhost:9094
+#  kafka:
+#    bootstrap-servers: localhost:9094
 
-  servlet:
-    multipart:
-      enabled: true
-      max-file-size: 2000MB
-      max-request-size: 2000MB
-      file-size-threshold: 2KB
-  data:
-    redis:
-      port: 6379
-      host: localhost
+#  servlet:
+#    multipart:
+#      enabled: true
+#      max-file-size: 2000MB
+#      max-request-size: 2000MB
+#      file-size-threshold: 2KB
+#  data:
+#    redis:
+#      port: 6379
+#      host: localhost
 
-cloudinary:
-  cloud-name: ${CLOUD-NAME}
-  api-key: ${API-KEY-CLOUDINARY}
-  api-secret: ${API-SECRET-KEY-CLOUDINARY}
-
-jwt:
-  secret-key: ${JWT-SECRET-KEY}
+#cloudinary:
+#  cloud-name: ${CLOUD-NAME}
+#  api-key: ${API-KEY-CLOUDINARY}
+#  api-secret: ${API-SECRET-KEY-CLOUDINARY}
+#
+#jwt:
+#  secret-key: ${JWT-SECRET-KEY}
