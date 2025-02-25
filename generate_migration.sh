@@ -50,6 +50,7 @@ fi
 if [ -f "$MIGRATION_LATEST_CHANGES_FILE" ]; then
     mv "$MIGRATION_LATEST_CHANGES_FILE" "$NEW_MIGRATION_FILE"
     echo "✅ SQL migration file created: $NEW_MIGRATION_FILE"
+    rm "$MIGRATION_LATEST_CHANGES_FILE"
 else
     echo "⚠️ File $MIGRATION_LATEST_CHANGES_FILE does not exists, do not move!"
 fi
