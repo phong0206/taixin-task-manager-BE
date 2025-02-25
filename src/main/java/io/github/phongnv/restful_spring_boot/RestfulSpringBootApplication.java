@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EnableJpaAuditing
 public class RestfulSpringBootApplication {
     public static void main(String[] args) {
-        System.out.println("✅ Ứng dụng Spring Boot đã chạy thành công!");
+        System.out.println("Ứng dụng Spring Boot đã chạy thành công!");
         SpringApplication.run(RestfulSpringBootApplication.class, args);
     }
 }
